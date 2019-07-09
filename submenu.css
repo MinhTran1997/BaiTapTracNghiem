@@ -1,0 +1,49 @@
+     .nav>li{
+        float: left;
+        margin-right: 15px;
+    }
+     
+    .nav>li>a{
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+ 
+    .nav li{
+        position: relative;
+    }
+ 
+    .nav li a{
+        padding: 10px;
+        line-height: 20px;
+        display: inline-block;
+        color: white;
+    }
+ 
+    .nav .sub-menu{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 200px;
+        background-color: #495057;
+        padding: 5px 20px;
+        font-size: 10px;
+        color: white;
+    }
+     
+    .nav li:hover>.sub-menu{
+        display: block;
+        font-size: 15px;
+    }
+ 
+    .nav>li>.sub-menu{
+        top: 40px;
+        left: 0;
+    }
+
+    .sidebar{
+        position: -webkit-sticky;
+        position: sticky;
+        top: 60px;
+        margin-bottom: 24px;
+    }
