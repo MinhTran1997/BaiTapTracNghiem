@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Trang chủ
+            <a class="nav-link" href="index.html">Trang chủ
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -40,16 +40,13 @@
             <a class="nav-link" href="#">Giới thiệu</a>
           </li>
 		      <li class="nav-item">
-            <a class="nav-link" href="#">Liên hệ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hỏi đáp</a>
+            <a class="nav-link" href="contact.html">Liên hệ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Tài khoản</a>
             <ul class="sub-menu">
               <li><a href="#">Đăng ký</a></li>
-              <li><a href="#">Đăng nhập</a></li>
+              <li><a href="login.html">Đăng nhập</a></li>
               <li><a href="#">Quên mật khẩu</a></li>
               <li><a href="#">Đăng xuất</a></li>
               <li><a href="#">Đổi mật khẩu</a></li>
@@ -63,9 +60,148 @@
   <!-- Page Content -->
   <div class="container">
 
-  </div> 
-
    
+
+    <!-- Page Features -->
+    <div class="row text-center" >
+        <div class="col-sm-4" style="margin-top: 50px">
+                <div class="panel panel-default sidebar" >
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-list"></span>
+                        <strong>DANH MỤC MÔN HỌC</strong>
+                    </div>
+                    <div>
+                        <ul class="list-group">
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình Android nâng cao
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình Android cơ bản
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Kiểm thử và triển khai ứng dụng Android
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế giao diện trên Android
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình ASP.NET
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Điện toán đám mây
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    SQL Server
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Cơ sở dữ liệu
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình game 2D
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="test.html">
+                                    HTML5 và CSS3
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Internet Marketing
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình Java nâng cao
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình hướng đối tượng với Java
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình JavaScript
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế layout
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế web cho điện thoại di động
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình PHP
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Quản lý dự án với Agile
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình VB.NET
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Xây dựng trang web
+                                </a>
+                            </li>                                  
+                        </ul>
+                    </div>
+                </div>
+        </div>
+      
+         <div class="grid">
+        <div id="quiz" style="margin-top: 50px">
+            <h1>HTML Quizz</h1>
+            <hr style="margin-bottom: 20px">
+ 
+            <p id="question"></p>
+ 
+            <div class="buttons">
+                <button id="btn0"><span id="choice0"></span></button>
+                <button id="btn1"><span id="choice1"></span></button>
+                <button id="btn2"><span id="choice2"></span></button>
+                <button id="btn3"><span id="choice3"></span></button>
+            </div>
+ 
+            <hr style="margin-top: 50px">
+            <footer>
+                <p id="progress">Question x of y</p>
+            </footer>
+        </div>
+    </div>
+        </div>
+      </div>
+    <!-- /.row -->
+    </div>
+  <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
