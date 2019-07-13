@@ -12,6 +12,7 @@
 
   <link rel="stylesheet" type="text/css" href="submenu.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -178,26 +179,17 @@
                 </div>
         </div>
       
-    <div class="grid">
-        <div id="quiz" style="margin-top: 50px">
-            <h1>HTML Quizz</h1>
-            <hr style="margin-bottom: 20px">
- 
-            <p id="question"></p>
- 
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
-            </div>
- 
-            <hr style="margin-top: 50px">
-            <footer>
-                <p id="progress">Question x of y</p>
-            </footer>
-        </div>
+    <div class="grid" ng-app="testExam" ng-controller="myCtrl">
+        {{list[0].Text}}
+        <ul>
+            <li ng-repeat="x in list[0].Answers">
+                {{x.Text}}
+            </li>
+        </ul>
+        <button type="submit" name="back" value="back" id="back">quay lại</button>
+        <button type="submit" name="next" value="next" id="next">tiếp theo</button>      
     </div>
+
 
         </div>
       </div>
@@ -216,7 +208,8 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/question.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/TestExam.js"></script>
 </body>
 
 </html>

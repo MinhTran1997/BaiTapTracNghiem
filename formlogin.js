@@ -26,8 +26,7 @@ $scope.mydata;
   .then(function(response) {
       $scope.mydata = response.data;
        angular.forEach($scope.mydata, function(item){
-               })
-      
+               })    
   });
   
   
