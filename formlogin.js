@@ -14,7 +14,8 @@ $scope.regObj.password="";
     window.location.href = 'index.html';
   else
     alert("Sai tên đăng nhập hoặc mật khẩu, vui lòng nhập lại!");
-  };
+  
+};
   
  $scope.regObj = {
 			"username" : "",

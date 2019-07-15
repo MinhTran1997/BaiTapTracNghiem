@@ -25,7 +25,15 @@
 
 </head>
 
-<body ng-app="myApp" ng-controller="myCtrl" ng-submit="submit()">
+<style type="text/css">
+  .error {color: red;
+          padding-left: 10px;
+          padding-top: 10px;}
+  .valid {color: blue;
+          padding-left: 10px;}
+</style>
+
+<body ng-app="myApp" ng-controller="myCtrl" >
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -70,22 +78,26 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Đăng nhập</h5>
-            <form class="form-signin">
+
+            <form class="form-signin" name="form" ng-submit="submit()" novalidate="">
               <div class="form-label-group">
-                <input type="text" id="user" name="user" ng-model="regObj.username" class="form-control" placeholder="Tên đăng nhập" required autofocus>
-                <label for="inputEmail">Tên đăng nhập</label>
+                <input type="text" id="user" name="user" ng-model="regObj.username" class="form-control" placeholder="Tên đăng nhập" required="true">
+                <label for="user">Tên đăng nhập</label>
+                <span class="error" ng-show="form.user.$error.required"> *Vui lòng nhập</span>
+                <span class="valid" ng-show="form.user.$valid"></span>
               </div>
 
               <div class="form-label-group">
                 <input type="password" id="password" name="password" ng-model="regObj.password" class="form-control" placeholder="Mật khẩu" required>
-                <label for="inputPassword">Mật khẩu</label>
+                <label for="password">Mật khẩu</label>
+                <span class="valid" ng-show="form.password.$valid"></span>
               </div>
 
               <div class="custom-control custom-checkbox mb-3">
                 <input type="checkbox" class="custom-control-input" id="customCheck1">
                 <label class="custom-control-label" for="customCheck1">Nhớ mật khẩu</label>
               </div>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" >Đăng nhập</button>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" ng-disabled="form.$invalid">Đăng nhập</button>
               <hr class="my-4">
               <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Đăng nhập bằng tài khoản Google</button>
               <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Đăng nhập bằng tài khoản Facebook</button>
