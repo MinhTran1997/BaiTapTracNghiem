@@ -107,13 +107,13 @@
         </div>
          
         <div class="form-label-group">
-          <input name="password" id="inputpassword"type="password" class="form-control" placeholder="Password" ng-model="formData.password" ng-pattern="" required />
+          <input name="password" id="inputpassword"type="password" class="form-control" placeholder="Password" ng-model="formData.password" required />
           <label for="inputpassword">Mật Khẩu</label>
           <span class="error" ng-show="userForm.password.$error.required"> *Bắt Buộc</span>
         </div>
 
         <div class="form-label-group">
-          <input name="confirm_password" id="inputconfirmpassword" type="password" class="form-control" placeholder="Confirm Password" ng-model="formData.confirmPassword" ng-pattern="formData.password" required />
+          <input name="confirm_password" id="inputconfirmpassword" type="password" class="form-control" placeholder="Confirm Password" ng-model="formData.confirmPassword" required />
           <label for="inputconfirmpassword">Nhập lại mật khẩu</label>
           <span class="error" ng-show=" formData.password != formData.confirmPassword">Mật khẩu phải khớp.</span>
       </div>
