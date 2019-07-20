@@ -3,71 +3,74 @@
 
 <head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <title>EzQuiz - Test</title>
+    <title>EzQuiz - Test</title>
 
-  <link rel="stylesheet" type="text/css" href="submenu.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="vendorlogin/bootstrap/js/popper.min.js"></script>
 
 </head>
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trang thi trắc nghiệm trực tuyến</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang chủ
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài khoản</a>
+                        <ul class="sub-menu">
+                            <li><a href="register.html">Đăng ký</a></li>
+                            <li><a href="login.html">Đăng nhập</a></li>
+                            <li><a href="forgetpassword.html">Quên mật khẩu</a></li>
+                            <li><a href="login.html">Đăng xuất</a></li>
+                            <li><a href="passwordchange.html">Đổi mật khẩu</a></li>
+                            <li><a href="profile.html">Cập nhật tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
     <div class="container">
-      <a class="navbar-brand" href="index.html">Trang thi trắc nghiệm trực tuyến</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Trang chủ
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-		      <li class="nav-item">
-            <a class="nav-link" href="about.html">Giới thiệu</a>
-          </li>
-		      <li class="nav-item">
-            <a class="nav-link" href="contact.html">Liên hệ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tài khoản</a>
-            <ul class="sub-menu">
-                <li><a href="register.html">Đăng ký</a></li>
-                <li><a href="login.html">Đăng nhập</a></li>
-                <li><a href="forgetpassword.html">Quên mật khẩu</a></li>
-                <li><a href="login.html">Đăng xuất</a></li>
-                <li><a href="passwordchange.html">Đổi mật khẩu</a></li>
-                <li><a href="profile.html">Cập nhật tài khoản</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <!-- Page Content -->
-  <div class="container">
-
-   
-
-    <!-- Page Features -->
-    <div class="row text-center" >
-        <div class="col-sm-4" style="margin-top: 50px">
-                <div class="panel panel-default sidebar" >
+        <!-- Page Features -->
+        <div class="row text-center">
+            <div class="col-sm-4" style="margin-top: 50px">
+                <div class="panel panel-default sidebar">
                     <div class="panel-heading">
                         <span class="glyphicon glyphicon-list"></span>
                         <strong>DANH MỤC MÔN HỌC</strong>
@@ -173,43 +176,69 @@
                                 <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
                                     Xây dựng trang web
                                 </a>
-                            </li>                                  
+                            </li>
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div ng-app="myApp" ng-controller="questionCtrl" class="col-sm-8 text-center">
+                <div class="container" ng-repeat="q in questions" ng-show="$index === count">
+                    <div style="margin-top: 50px">
+                        <div class="form-group">
+                            <div class="question">
+                                <h4 id="question" ng-value="q.Id" ng-model="myQuestion">{{(count+1) +". "+ q.Text}}
+                                </h4>
+                            </div>
+
+                            <div class="form-check" data-toggle="buttons">
+                                <label class="btn btn-outline-primary col-sm-8" ng-repeat="option in q.Answers"
+                                    style="max-width: 100%">
+                                    <input type="radio" name="{{q.Id}}" ng-value="option.Id" ng-model="$parent.myChoice"
+                                        ng-change="checkAnswer(myChoice)">
+                                    {{option.Text}}
+
+                                </label>
+                            </div>
+
+                            <button type="button" class="btn btn-light" ng-click="first()"><i
+                                    class="fa fa-angle-double-left"></i> Câu đầu tiên</button>
+                            <button type="button" class="btn btn-light" ng-click="prev()"><i
+                                    class="fa fa-angle-left"></i> Quay lại</button>
+                            <button type="button" class="btn btn-light" ng-click="next()">Tiếp theo <i
+                                    class="fa fa-angle-right"></i></button>
+                            <button type="button" class="btn btn-light" ng-click="last()">Câu cuối cùng <i
+                                    class="fa fa-angle-double-right"></i></button>
+                            <button type="submit" class="btn btn-light" ng-click="myScore=true; mark()">Chấm điểm</button>
+
+
+                            <!--<p>current value: {{myChoice}}</p>
+                                <p>Right answer: {{rightAnswer}}</p>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      
-    <div class="grid" ng-app="testExam" ng-controller="myCtrl">
-        {{list[0].Text}}
-        <ul>
-            <li ng-repeat="x in list[0].Answers">
-                {{x.Text}}
-            </li>
-        </ul>
-        <button type="submit" name="back" value="back" id="back">quay lại</button>
-        <button type="submit" name="next" value="next" id="next">tiếp theo</button>      
     </div>
-
-
-        </div>
-      </div>
     <!-- /.row -->
     </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Nhóm 4 - ISC Quang Trung Intake 9 - lập trình Frontend Backend</p>
-    </div>
     <!-- /.container -->
-  </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="js/TestExam.js"></script>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Nhóm 4 - ISC Quang Trung Intake 9 - lập trình Frontend Backend</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="TestExam.js"></script>
 </body>
 
 </html>
