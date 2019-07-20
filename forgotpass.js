@@ -33,7 +33,7 @@ myApp.controller("forgotPasswordCtrl", function($scope, $http)
 		 if(stat=="true")
 			alert("Password của bạn là: " + pass);
 		else
-			alert("Vui lòng nhập đúng thông tin!");
+			alert("Vui lòng nhập đúng mã xác nhận!");
 	};
 
 	$scope.students;
