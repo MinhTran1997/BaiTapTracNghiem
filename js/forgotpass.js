@@ -23,7 +23,7 @@ myApp.controller("forgotPasswordCtrl", function($scope, $http)
 			angular.forEach($scope.students, function(item)
 			{
 				//(item.email == $scope.inputEmail && ($scope.yourcode == "nAkmP")
-	      if(item.email == $scope.inputEmail)
+	      if((item.email == $scope.inputEmail) && ("nAkmP" == $scope.yourcode))
 	      {
 					stat = "true";
 					pass = item.password;
@@ -33,7 +33,7 @@ myApp.controller("forgotPasswordCtrl", function($scope, $http)
 		 if(stat=="true")
 			alert("Password của bạn là: " + pass);
 		else
-			alert("Vui lòng nhập đúng thông tin!");
+			alert("Email hoặc mã xác nhận không hợp lệ, vui lòng nhập lại!");
 	};
 
 	$scope.students;
