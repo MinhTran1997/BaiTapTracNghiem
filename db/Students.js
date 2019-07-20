@@ -11,7 +11,7 @@
     },
     {
         "username": "pheonv",
-        "password": "iloveyou",
+        "password": "iloveyou3000",
         "fullname": "Nguyễn Văn Chí Phèo",
         "email": "pheonv@fpt.edu.vn",
         "gender": "true",
