@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EzQuiz Home</title>
+
+    <link rel="stylesheet" type="text/css" href="css/submenu.css">
+    <link rel="stylesheet" type="text/css" href="css/cssPagingIndex.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Trang thi trắc nghiệm trực tuyến</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang chủ
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Giới thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tài khoản</a>
+                        <ul class="sub-menu">
+                            <li><a href="register.html">Đăng ký</a></li>
+                            <li><a href="login.html">Đăng nhập</a></li>
+                            <li><a href="forgotpassword.html">Quên mật khẩu</a></li>
+                            <li><a href="login.html">Đăng xuất</a></li>
+                            <li><a href="passwordchange.html">Đổi mật khẩu</a></li>
+                            <li><a href="profile.html">Cập nhật tài khoản</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Header -->
+        <header class="jumbotron my-4">
+            <h1 class="display-3" style="font-size: 50px;">Chào mừng đến trang thi trắc nghiệm trực tuyến!</h1>
+            <p class="lead">Với hàng trăm những câu trắc nghiệm thú vị, từ nhiều bộ môn về lập trình, cơ sở dữ liệu khác
+                nhau. Đáp án, số điểm cũng như thời gian làm bài sẽ được cập nhật liên tục trong suốt quá trình làm bài.
+                Trang thi hứa hẹn sẽ cung cấp cho các bạn những kiến thức bố ích và tổng quan về 20 bộ môn học hiện đang
+                có trong chương trình giảng dạy của nhà trường một cách hiệu quả nhất. Còn chần chờ gì nữa, hãy bắt đầu
+                ngay nào!!! </p>
+        </header>
+
+        <!-- Page Features -->
+        <div class="row text-center">
+            <div class="col-sm-3">
+                <div class="panel panel-default sidebar">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-list"></span>
+                        <strong>DANH MỤC MÔN HỌC</strong>
+                    </div>
+                    <div>
+                        <ul class="list-group">
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="TestExam.html">
+                                    Lập trình Android nâng cao
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình Android cơ bản
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Kiểm thử và triển khai ứng dụng Android
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế giao diện trên Android
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình ASP.NET
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Điện toán đám mây
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    SQL Server
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Cơ sở dữ liệu
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình game 2D
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    HTML5 và CSS3
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Internet Marketing
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình Java nâng cao
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình hướng đối tượng với Java
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình JavaScript
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế layout
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Thiết kế web cho điện thoại di động
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình PHP
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Quản lý dự án với Agile
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Lập trình VB.NET
+                                </a>
+                            </li>
+                            <li ng-repeat="x in subjects" class="list-group-item">
+                                <a style="text-decoration: none; color:rgb(111, 136, 136)" href="#">
+                                    Xây dựng trang web
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-9" style="margin-top: 5px">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/INMA.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 11</h4>
+                                <p class="card-text">Internet Marketing</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/JAAV.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 12</h4>
+                                <p class="card-text">Lập trình Java nâng cao</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/JABS.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 13</h4>
+                                <p class="card-text">Lập trình hướng đối tượng với Java</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/JSPR.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 14</h4>
+                                <p class="card-text">Lập trình JavaScript</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/LAYO.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 15</h4>
+                                <p class="card-text">Thiết kế layout</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/MOWE.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 16</h4>
+                                <p class="card-text">Thiết kế web cho điện thoại di động</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/PHPP.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 17</h4>
+                                <p class="card-text">Lập trình PHP</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/PMAG.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 18</h4>
+                                <p class="card-text">Quản lý dự án với Agile</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/VBPR.png" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 19</h4>
+                                <p class="card-text">Lập trình VB.NET</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="images/logos/WEBU.jpg" alt="">
+                            <div class="card-body">
+                                <h4 class="card-title">Trắc nghiệm 20</h4>
+                                <p class="card-text">Xây dựng trang web</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-primary">Tìm hiểu thêm!</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="center row">
+            <div class="pagination">
+                <a href="index.html">&laquo;</a>
+                <a href="index.html" class="active">1</a>
+                <a href="index2.html">2</a>
+                <a href="index2.html">&raquo;</a>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">FM14 - ISC09 - Lập Trình Frontend Backend</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
