@@ -22,6 +22,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendorlogin/bootstrap/js/popper.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -193,7 +197,7 @@
 
                             <div class="form-check" data-toggle="buttons">
                                 <label class="btn btn-outline-primary col-sm-8" ng-repeat="option in q.Answers"
-                                    style="max-width: 100%">
+                                    style="max-width: 100%; background-color: white; color: black">
                                     <input type="radio" name="{{q.Id}}" ng-value="option.Id" ng-model="$parent.myChoice"
                                         ng-change="checkAnswer(myChoice)">
                                     {{option.Text}}
@@ -201,15 +205,15 @@
                                 </label>
                             </div>
 
-                            <button type="button" class="btn btn-light" ng-click="first()"><i
+                            <button type="button" class="btn btn-light bg-dark text-white" ng-click="first()"><i
                                     class="fa fa-angle-double-left"></i> Câu đầu tiên</button>
-                            <button type="button" class="btn btn-light" ng-click="prev()"><i
+                            <button type="button" class="btn btn-light bg-dark text-white" ng-click="prev()"><i
                                     class="fa fa-angle-left"></i> Quay lại</button>
-                            <button type="button" class="btn btn-light" ng-click="next()">Tiếp theo <i
+                            <button type="button" class="btn btn-light bg-dark text-white" ng-click="next()">Tiếp theo <i
                                     class="fa fa-angle-right"></i></button>
-                            <button type="button" class="btn btn-light" ng-click="last()">Câu cuối cùng <i
+                            <button type="button" class="btn btn-light bg-dark text-white" ng-click="last()">Câu cuối cùng <i
                                     class="fa fa-angle-double-right"></i></button>
-                            <button type="submit" class="btn btn-light" ng-click="myScore=true; mark()">Chấm điểm</button>
+                            <button type="submit" class="btn btn-light bg-dark text-white" ng-click="myScore=true; mark()">Chấm điểm</button>
 
 
                             <!--<p>current value: {{myChoice}}</p>
